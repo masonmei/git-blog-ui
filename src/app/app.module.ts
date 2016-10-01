@@ -5,6 +5,8 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
+import {MaterialModule} from '@angular/material';
+
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
@@ -31,6 +33,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     FormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
+    MaterialModule.forRoot(),
     routing
   ],
   providers: [HeroService],
